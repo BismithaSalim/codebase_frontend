@@ -1,0 +1,12 @@
+<body>    
+    <h1 align="center"> URL Shortner </h1>  
+    <form action="#" class="shorten" [formGroup]="homeForm">  
+        <div class="container">   
+            <label>Enter the Url </label>   
+            <input type="text" placeholder="Enter url" name="longurl" formControlName="longurl" class="form-control form-control-lg" required> 
+            <input type="text" *ngIf="flag" formControlName="shorturl" class="form-control form-control-lg">  
+            <button type="submit" class="btn btn-primary" (click)="shorten()">Shorten</button> &nbsp;
+            <button type="submit" class="btn btn-primary" (click)="redirect()">Redirect</button>       
+        </div>   
+    </form>     
+</body>
